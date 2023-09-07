@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>temp</title>
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="/css/init.css" type="text/css" />
+    <!-- 스크립트연결 -->
+    <style>
+      #Login_Logo {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+      }
+      .input-txt-full {
+        width: 100%;
+      }
+      .div-input-pw {
+        position: relative;
+      }
+
+      #showPwd {
+        width: 68px;
+        padding: 1px 0px;
+        box-sizing: border-box;
+        font-size: 0.7em;
+        background-color: #fff;
+        border: 0px;
+        position: absolute;
+        right: 3px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .input-btn-login {
+        margin-top: 20px;
+        width: 100%;
+      }
+      .ul-li-dp {
+        display: flex;
+        justify-content: space-between;
+      }
+      #ul-search-idpw {
+        margin: 0 auto;
+      }
+
+      .div-login-state {
+        margin: 40px 0 0;
+        text-align: center;
+      }
+      .div-search-idpw {
+        margin: 30px 0 0;
+      }
+      .div-login-sns {
+        margin: 30px 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <!-- 헤더 작업할 내용 -->
+        <h1>Welcome to My Website</h1>
+        <nav>
+          <a href="#section1">네비 1</a> |
+          <a href="#section2">네비 2</a>
+        </nav>
+      </header>
+
+      <main>
+        <!-- 여기서 메인작업 -->
+        <div class="div-popup">
+          <div id="Login_Logo">
+            <h1>로고??</h1>
+          </div>
+
+          <div>
+            <form id="form-login">
+              <div id="input-id-pwd">
+                <div class="div-input-id">
+                  <input
+                    type="text"
+                    class="input-txt input-txt-full"
+                    id="userid"
+                    name="userid"
+                    maxlength="60"
+                    placeholder="아이디 입력"
+                    autocapitalize="off"
+                  />
+                </div>
+
+                <div class="div-input-pw">
+                  <input
+                    type="password"
+                    class="input-txt input-txt-full"
+                    name="inputPw"
+                    id="inputPw"
+                    maxlength="20"
+                    placeholder="비밀번호 8자~20자"
+                  />
+                  <a href="#">
+                    <input type="button" id="showPwd" value="비밀번호보기"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="loginBtn">
+                <input
+                  type="button"
+                  id="loginButton"
+                  value="로그인"
+                  onclick="var a=2;"
+                  class="input-btn input-btn-login"
+                />
+              </div>
+
+              <div class="div-login-state">
+                <input type="checkbox" class="chbox" id="stayLogIn" />
+                <label for="stayLogIn">로그인 상태 유지</label>
+                <input type="checkbox" class="chbox" id="rememberID" />
+                <label for="rememberID">아이디 기억하기</label>
+              </div>
+            </form>
+          </div>
+
+          <div class="div-search-idpw">
+            <ul
+              class="ul-float ul-li-dp"
+              id="ul-search-idpw"
+              style="width: 80%"
+            >
+              <li><a href="#">아이디찾기</a></li>
+              <li><a href="#">비밀번호찾기</a></li>
+              <li><a href="joinmember.html">회원가입</a></li>
+            </ul>
+          </div>
+
+          <div class="div-login-sns" style="clear: both">
+            <ul class="ul-float ul-li-dp">
+              <li class="">
+                <a href="#">
+                  <!-- <img src="asset/img/kakao.png" alt="카카오" /> -->
+                  <img
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLVcbNvHCbwbTwAwf6cYLZSbTPhVYmd6ddIbGI4sEEZtEvQMOox-7brLquKMwqphFqdW9wvavr1hE_ulvZHPBgOBvDxLEwi_LRmkt6Wxu9uk-ISSZp8kqVkRpyU48SzEn7SIgf8RlmQT_pNkQZVF8n3y4SElenZW0UhLWn58gODaOQjTz_pHOqzB87WVc/s1600/kakao.png"
+                    alt="카카오"
+                  />
+                </a>
+              </li>
+              <li class="">
+                <a href="#">
+                  <!-- <img src="asset/img/naver.png" alt="네이버" /> -->
+                  <img
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUjIMQnPbK8XCfR8eJKT-mjmV3NNL7utLI3eXJ_xIxutg55--_Q070bkELkPsUeGBoeNm1RkNJOxHaAcjzZlpH6FW9ZUyJqB44d6q8_04QsXWE6qTJ4t_Qnk-thO4WDZJxtwKs95ZS0hHzdAqV1s8HvAeO_bW9AYMIiEU4kLVDpoJV9nnSmIX_4cz1EbA/s1600/naver.png"
+                    alt="네이버"
+                  />
+                </a>
+              </li>
+              <li class="">
+                <a href="#">
+                  <!-- <img src="asset/img/t.png" alt="T 아이디" /> -->
+                  <img
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjq2apeHOdPcOMNWMDQbyQtjKiV58JD4NlrEWr7HqHbb9ekmMa-rlZqSQ97tFxcGAr-L6xQVruuvv8LBCwZxVtygMZCzqbeDt2X1ypUr_y0Og145f0d20Mmm7LifNtXAA2W8uLRgzzcX8xxJdQr1j8nXLo9wF6KX36byDYlosdaB-UB7pK2r7ic8zTCVME/s1600/t.png"
+                    alt="T 아이디"
+                  />
+                </a>
+              </li>
+              <li class="">
+                <a href="#">
+                  <!-- <img src="asset/img/apple.png" alt="애플" /> -->
+                  <img
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2GyTfmSJa3k_4WNfYbGsWp8thRP2rsmnKRMxEpq6PS5kGb9jteYoO6aDl8rSDaHbY90ZdUGl9aajgVY5VJ5wtjqstr8k0AoRj-eHxYX1Z6kBur080LSrlDGLdpR2y5R571qEynlLgUkMWoHv-kEHNjGxkhuXTBFtzqZwsBL45woE1EiWd428I3iaI7Q8/s1600/apple.png"
+                    alt="애플"
+                  />
+                </a>
+              </li>
+              <li class="">
+                <a href="#">
+                  <!-- <img src="asset/img/payco.png" alt="페이코" /> -->
+                  <img
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYjYtcoiV34NNWBAwahVRWjJgeJZ8CBgTeMWmj7kJ11ST4JJKPDtLv3Ir4x3cqb-p8H1T7Cl7FPwL841Z5mS-5dKpA6If2Cr_sd8Jmcx0jgMcebn3_l3V7OVS3N-6wW2Rsk28ML9Hv43TFFeMVM0cg6O_Iig15PLqNBogtl56_Nfrpk2Oy37HrQRYvJyg/s1600/payco.png"
+                    alt="페이코"
+                  />
+                </a>
+              </li>
+              <li class="">
+                <a href="#">
+                  <!-- <img src="asset/img/face.png" alt="페이스북" /> -->
+                  <img
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQ9K07ViefNKac2_4xc7qHnIb6zyXEid6aozKlcOrWw22v8Eg4V6DpC93omgak_BouHDXvjqQJ5me-u1XYDAsRAfoWVQMwp2tAtPHjr2jXCf4-qwPuSpKEiQ8zKkwUwTUlv8FF0I1PQ9iTZET3S9sPUVLArybv30HvBeL0afgtkHbY9vPz_YuOd755d98/s1600/face.png"
+                    alt="페이스북"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <time datetime="2023-09-05">Published on September 5, 2023</time>
+      </footer>
+    </div>
+  </body>
+</html>
