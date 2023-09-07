@@ -1,0 +1,81 @@
+.search-container {	/* 검색창 컨테이너*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+	
+}
+
+.search-input {	/* 검색어 입력 하는 곳 */
+    padding: 10px;
+    width: 700px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    border: 2px solid black; 
+}
+
+.search-input::placeholder {	/* "지금 어디가고 싶으세요?" 가운데 정렬 */ 
+    text-align: center;
+}
+
+.search-button {	/* 검색 버튼 */
+    padding: 10px 20px;
+    background-color: aqua; 
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color:skyblue /* hover시 색상 변경 */
+}
+
+.login-button{	/* 로그인 버튼 */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+}	
+.tip{
+	border: 2px solid black; padding: 10px;
+	text-align: center;
+	font-size: 18px;
+	color: red; 
+}
+.menu{
+	border-left: 2px solid black;	border-right: 2px solid black; border-top: 2px solid black;
+	text-align: center;
+}
+
+
+.tip span {		/* "TIP" 글씨 변경 */
+    color: orange;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.menu a{
+	text-decoration: none;
+	font-size: 18px;
+	margin: 30px;
+	color: black;
+}
+
+.menu a:first-child {
+	color: deepskyblue;
+}
+
+.menu a:nth-child(2){
+	color: red;
+}
+
+.logo{	/* 로고 */
+	position: absolute; 
+    left: 0; 
+    top: 0; 
+    width: 100px; height: 50px;
+}
