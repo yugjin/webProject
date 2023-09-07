@@ -8,64 +8,107 @@
 	box-sizing: border-box;		
 }
 */
+/* ------ 공동 구역 시작----------------------------------------------- */
 /* 1. 초기화 */
 body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    border: 1px solid red;
 }
 .wrapper {
-  width: 1300px;
-  margin: auto;
+    width: 1300px;
+    margin: auto;
+    border: 1px solid red;
 }
 header,
 footer {
-  text-align: center;
+    text-align: center;
+    border: 1px solid red;
 }
 main {
-  width: 750px;
-  float: left;
+    width: 100%;
+    border: 1px solid red;
 }
 aside {
-  width: 250px;
-  float: right;
+    width: 0;
+    display: inline-block;
 }
 footer {
-  clear: both;
+    clear: both;
+    border: 1px solid red;
+    background-color: aquamarine;
 }
 
 /* 2. 사용되는 태그 CSS 재정의  */
 /* 컬러 높이 */
+
+/* input-type 속성 */
+
+/* box-sizing: 전체적용
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+} */
 .input-txt {
   height: 50px;
+  /* -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box; */
+  box-sizing: border-box;
+}
+.input-btn{
+  height: 50px;
+  /* box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; */
+       box-sizing: border-box;
 }
 /* 메뉴스타일 ul-li*/
 .ul-float {
-  padding: 0;
-  margin: 0;
-  height: 50px;
-  list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    list-style-type: none;
 }
 .ul-float li {
-  padding: 0;
-  margin: 0;
-  float: left;
-  height: 50px;
-  line-height: 50px;
-  list-style-type: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    list-style-type: none;
 }
 
 /* a태그 가상선택자 */
 a:link,
 a:visited {
-  text-decoration: none;
-  color: blue;
+    text-decoration: none;
+    color: blue;
 }
 a:hover {
-  text-decoration: none;
-  color: red;
+    text-decoration: none;
+    color: red;
 }
 a:active {
-  text-decoration: underline;
-  color: green;
+    text-decoration: underline;
+    color: green;
+}
+/* ------ 공동 구역 끝------------------------------------- */
+
+/* 한유진 테스트 공간 */
+
+/* 유운상 테스트 공간 */
+
+/* 조용승 테스트 공간 */
+
+/* 박흥순 테스트 공간 */
+
+
+/* 박성배 테스트 공간 */
+.div-popup{
+  width: 400px; height: 480px;
+  margin: 100px auto;
+  border: 2px solid rgb(192, 192, 192);
 }
